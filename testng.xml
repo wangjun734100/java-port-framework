@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="E:/API_AutoFramewrok_Demo">
+        <classes>
+            <class name="com.qa.tests.DeleteApiTest">
+                <methods>
+                    <include name="deleteApiTest"/>
+                </methods>
+            </class>
+            <class name="com.qa.tests.GetApiTest">
+                <methods>
+                    <include name="getAPITest"/>
+                </methods>
+            </class>
+            <class name="com.qa.tests.PostApiTest">
+                <methods>
+                    <include name="postApiTest"/>
+                </methods>
+            </class>
+            <class name="com.qa.tests.PutApiTest">
+                <methods>
+                    <include name="putTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="com.qa.report.ExtentTestNGReporterListener"></listener>
+    </listeners>
+
+</suite>
+
+
+
